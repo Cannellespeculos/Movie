@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+$bg-background: #10141e;
+$bg-black: #161d2f;
+$btn-bg: rgb(103, 02, 38);
+$btn-border-bot-right: rgb(73, 02, 38);
+$btn-border-top-left: rgb(123, 02, 38);
+$font-outfit: "outfit";
+
+* {
+  font-family: $font-outfit;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $bg-background;
+
+  nav {
+    background-color: $bg-black;
+    width: 100%;
+    height: 80px;
+  }
+
+  main {
+    button {
+      width: 100px;
+      height: 30px;
+      color: white;
+      background-color: $btn-bg;
+      border-radius: 5px;
+      border-bottom: 3px solid $btn-border-bot-right;
+      border-right: 3px solid $btn-border-bot-right;
+      border-left: 3px solid $btn-border-top-left;
+      border-top: 3px solid $btn-border-top-left;
+      margin-bottom: 10px;
+    }
+
+    div {
+      width: 300;
+      height: 500px;
+      -webkit-box-shadow: 1px 3px 17px 5px rgba(0, 0, 0, 0.54);
+      box-shadow: 1px 3px 17px 5px rgba(0, 0, 0, 0.54);
+      .img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
